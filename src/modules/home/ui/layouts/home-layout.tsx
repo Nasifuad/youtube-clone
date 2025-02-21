@@ -5,7 +5,7 @@ interface homeLayoutProps {
   children: React.ReactNode;
 }
 
-export const HomeLayout = ({ children }: homeLayoutProps) => {
+const HomeLayout = ({ children }: homeLayoutProps) => {
   return (
     <SidebarProvider>
       <div className="w-full">
@@ -15,3 +15,5 @@ export const HomeLayout = ({ children }: homeLayoutProps) => {
     </SidebarProvider>
   );
 };
+
+export default HomeLayout;
